@@ -14,7 +14,6 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
         <title>Halaman Bookstore</title>
         <link rel="stylesheet" href="style.css" class="">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/features/">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
@@ -123,11 +122,11 @@
             <div class="row">
                 <div class="col bestseller-box" style="margin-left: 20px;">
                     <h2 class="sec-title">Bestsellers</h2>
-                    <div class="row sectionA">
-                        <div class="col left-bestseller">
-                            <div class="bestseller-sec">
+                    <div class=" sectionA">
+                        <div class="left-bestseller" id="booklist-left">
+                            <!-- <div class="bestseller-sec">
                                 <div class="book-image">
-                                    <img src="images/book_11.jpeg" alt="" class="" style="width: 100px; height: auto;">
+                                    <img class="img-style" src="images/book_11.jpeg" alt="" class="" style="width: 100px; height: auto;">
                                 </div>
                                 <div class="section-details">
                                     <div class="author-flex">
@@ -135,151 +134,27 @@
                                     </div>
                                     <div class="book-details">
                                         <div class="booktitle">JK Rowling</div>
-                                        <div class="">
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                        </div>
                                         <div class="price">RM 70.00</div>
                                         <span class="btn btn-sm btn-outline-info mt-2">Add to cart</span>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="bestseller-sec">
-                                <div class="book-image">
-                                    <img src="images/book_1.jpeg" alt="" class="" style="width: 100px; height: auto;">
-                                </div>
-                                <div class="section-details">
-                                    <div class="author-flex">
-                                        <div class="author">Shoe Dog</div>
-                                    </div>
-                                    <div class="book-details">
-                                        <div class="booktitle">Phil Knight</div>
-                                        <div class="">
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                        </div>
-                                        <div class="price">RM 70.00</div>
-                                        <span class="btn btn-sm btn-outline-info mt-2">Add to cart</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bestseller-sec">
-                                <div class="book-image">
-                                    <img src="images/book_2.jpeg" alt="" class="" style="width: 100px; height: auto;">
-                                </div>
-                                <div class="section-details">
-                                    <div class="author-flex">
-                                        <div class="author">Elon Musk: Risk it all</div>
-                                    </div>
-                                    <div class="book-details">
-                                        <div class="booktitle">Michael Vlismas</div>
-                                        <div class="">
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                        </div>
-                                        <div class="price">RM 70.00</div>
-                                        <span class="btn btn-sm btn-outline-info mt-2">Add to cart</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="bestseller-sec">
-                                <div class="book-image">
-                                    <img src="images/book_3.jpeg" alt="" class="" style="width: 100px; height: auto;">
-                                </div>
-                                <div class="section-details">
-                                    <div class="author-flex">
-                                        <div class="author">After Steve</div>
-                                    </div>
-                                    <div class="book-details">
-                                        <div class="booktitle">Tripp Mickle</div>
-                                        <div class="">
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                        </div>
-                                        <div class="price">RM 70.00</div>
-                                        <span class="btn btn-sm btn-outline-info mt-2">Add to cart</span>
-                                    </div> 
-                                </div>
-                            </div>
-                            <div class="bestseller-sec">
-                                <div class="book-image">
-                                    <img src="images/book_13.jpeg" alt="" class="" style="width: 100px; height: auto;">
-                                </div>
-                                <div class="section-details">
-                                    <div class="author-flex">
-                                        <div class="author">Harry Potter and the Deathly Hallows</div>
-                                    </div>
-                                    <div class="book-details">
-                                        <div class="booktitle">Jk Rowling</div>
-                                        <div class="">
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                        </div>
-                                        <div class="price">RM 70.00</div>
-                                        <span class="btn btn-sm btn-outline-info mt-2">Add to cart</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bestseller-sec">
-                                <div class="book-image">
-                                    <img src="images/book_5.jpeg" alt="" class="" style="width: 100px; height: auto;">
-                                </div>
-                                <div class="section-details">
-                                    <div class="author-flex">
-                                        <div class="author">Rich Dad Poor Dad</div>
-                                    </div>
-                                    <div class="book-details">
-                                        <div class="booktitle">Robert T.Kiyosaki</div>
-                                        <div class="">
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                        </div>
-                                        <div class="price">RM 70.00</div>
-                                        <span class="btn btn-sm btn-outline-info mt-2">Add to cart</span>
-                                    </div>
-                                </div>
-                            </div>
+                            </div> -->
+
                         </div>
                     </div>
                 </div>
                 <!-- discount section -->
                 <div class="col ">
                     <h2 class="sec-title">Discount</h2>
-                    <div class="col sectionB">
-                        <div class="discount-flex">
+                    <div class="col sectionB" id="discount-section">
+                        <!-- <div class="discount-flex">
                             <div class="discount-box">
                                 <div class="book-discount">
                                     <div>
-                                        <img src="images/book_9.jpeg" alt="" class="" style="height:140px; width:auto;">
+                                        <img src="images/book_9.jpeg" alt="" class="discount-img" style="height:140px; width:auto;">
                                     </div>
                                     <div class="description">
                                         <h5>The Singapore and Malacca Straits</h5>
-                                        <div class="">
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                        </div>
                                         <div class="price-discount">
                                             <div>RM 69.80</div>
                                         </div> 
@@ -287,76 +162,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="discount-flex">
-                            <div class="discount-box">
-                                <div class="book-discount">
-                                    <div>
-                                        <img src="images/book_8.jpeg" alt="" class="" style="height:140px; width:auto;">
-                                    </div>
-                                    <div class="description">
-                                        <h5>Prince of Pirates</h5>
-                                        <div class="">
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                        </div>
-                                        <div class="price-discount">
-                                            <div>RM 69.80</div>
-                                        </div>
-                                        <div class="btn btn-sm btn-outline-info mt-2">Add to cart</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="discount-flex">
-                            <div class="discount-box">
-                                <div class="book-discount">
-                                    <div>
-                                        <img src="images/book_7.jpeg" alt="" class="" style="height:140px; width:auto;">
-                                    </div>
-                                    <div class="description">
-                                        <h5>Conversations with Tunku Abdul Rahman</h5>
-                                        <div class="">
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                            <i class="bi bi-star"></i>
-                                        </div>
-                                        <div class="price-discount">
-                                            <div>RM 69.80</div>
-                                        </div>
-                                        <div class="btn btn-sm btn-outline-info mt-2">Add to cart</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                       <div class="discount-flex">
-                        <div class="discount-box">
-                            <div class="book-discount">
-                                <div class="">
-                                    <img src="images/book_10.jpeg" alt="" class="" style="height:140px; width:auto;">
-                                </div>
-                                <div class="description">
-                                    <h5>The Towns of Malaya</h5>
-                                    <div class="">
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                        <i class="bi bi-star"></i>
-                                    </div>
-                                    <div class="price-discount">
-                                        <div>RM 69.80</div>
-                                    </div>
-                                    <div class="btn btn-sm btn-outline-info mt-2">Add to cart</div>
-                                </div>
-                            </div>
-                        </div>
-                       </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -624,6 +430,7 @@
                 },
             });
         </script>
-       <script type="text/javascript" src="script.js"></script>
+       <script type="text/javascript" src="script.js" async></script>
+       <script type="text/javascript" src="bookdata.js" async></script>
     </body>
 </html>
